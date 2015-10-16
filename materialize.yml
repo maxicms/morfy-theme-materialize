@@ -1,0 +1,13 @@
+name: Materialize
+version: 1.0.0
+description: Materialize Morfy theme
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage: https://github.com/morfy-cms/morfy-theme-materialize
+bugs: https://github.com/morfy-cms/morfy-theme-materialize/issues
+license: MIT
+
+# Theme settings
+enabled: true
