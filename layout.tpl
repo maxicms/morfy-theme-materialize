@@ -6,7 +6,7 @@
   <meta name="description" content="{$description}>">
   <meta name="keywords" content="{$keywords}">
 
-  {Morfy::factory()->runAction('theme_meta')}
+  {Morfy::runAction('theme_meta')}
 
   <link rel="shortcut icon" href="{$.site.url}/favicon.ico">
 
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{$.site.url}/themes/{$.site.theme}/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{$.site.url}/themes/{$.site.theme}/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  {Morfy::factory()->runAction('theme_header')}
+  {Morfy::runAction('theme_header')}
 
 </head>
 <body>
@@ -25,9 +25,9 @@
     <div class="container">
     	<div class="row">
     		<div class="col l12 s12">
-    			{Morfy::factory()->runAction('theme_content_before')}
+    			{Morfy::runAction('theme_content_before')}
     			{block 'content'}{/block}
-    			{Morfy::factory()->runAction('theme_content_after')}
+    			{Morfy::runAction('theme_content_after')}
     		</div>
     	</div>
     </div>
