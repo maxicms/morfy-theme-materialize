@@ -4,9 +4,11 @@ description: Materialize Morfy theme
 author:
   name: Sergey Romanenko
   email: awilum@msn.com
-  url: http://morfy.org
+  url: https://github.com/Awilum
 homepage: https://github.com/morfy-cms/morfy-theme-materialize
+download: https://github.com/morfy-cms/morfy-theme-materialize/releases
 bugs: https://github.com/morfy-cms/morfy-theme-materialize/issues
+preview: screenshot.png
 license: MIT
 
 # Theme settings

@@ -1,4 +1,6 @@
 # Morfy Materialize Themes
+![](screenshot.png)
+
 Materialize theme for Morfy with [Materialize Framework](http://materializecss.com/)
 
 ## License
