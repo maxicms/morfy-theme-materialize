@@ -6,17 +6,17 @@
   <meta name="description" content="{$description}>">
   <meta name="keywords" content="{$keywords}">
 
-  {Morfy::runAction('theme_meta')}
+  {Action::run('theme_meta')}
 
-  <link rel="shortcut icon" href="{$.site.url}/favicon.ico">
+  <link rel="shortcut icon" href="{Url::getBase()}/favicon.ico">
 
-  <title>{$.site.title} | {$title}</title>
+  <title>{$config.site.title} | {$title}</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="{$.site.url}/themes/{$.site.theme}/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="{$.site.url}/themes/{$.site.theme}/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  {Morfy::runAction('theme_header')}
+  <link href="{Url::getBase()}/themes/{$config.system.theme}/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{Url::getBase()}/themes/{$config.system.theme}/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  {Action::run('theme_header')}
 
 </head>
 <body>
@@ -25,16 +25,16 @@
     <div class="container">
     	<div class="row">
     		<div class="col l12 s12">
-    			{Morfy::runAction('theme_content_before')}
+    			{Action::run('theme_content_before')}
     			{block 'content'}{/block}
-    			{Morfy::runAction('theme_content_after')}
+    			{Action::run('theme_content_after')}
     		</div>
     	</div>
     </div>
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="{$.site.url}/themes/{$.site.theme}/assets/js/materialize.js"></script>
-    <script src="{$.site.url}/themes/{$.site.theme}/assets/js/init.js"></script>
+    <script src="{Url::getBase()}/themes/{$config.system.theme}/assets/js/materialize.js"></script>
+    <script src="{Url::getBase()}/themes/{$config.system.theme}/assets/js/init.js"></script>
   </body>
 </html>
