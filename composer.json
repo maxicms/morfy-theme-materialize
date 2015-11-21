@@ -1,0 +1,19 @@
+{
+  "name": "maxicms/morfy-theme-materialize",
+  "description": "Materialize theme for Morfy with Materialize Framework",
+  "minimum-stability": "stable",
+  "type": "morfy-theme",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Max Kostjukevich",
+      "email": "support@maxicms.ru"
+    }
+  ],
+  "extra": {
+    "installer-name": "materialize"
+  },
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
